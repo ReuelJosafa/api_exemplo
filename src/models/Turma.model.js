@@ -1,0 +1,6 @@
+class TurmaModel{
+
+    constructor(){
+        
+    }
+}

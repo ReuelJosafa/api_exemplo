@@ -1,6 +1,6 @@
 var bodyParser = require('body-parser')
 const express = require('express');
-const turmaRouters = require('./routes/Turma.routes');
+const routers = require('./routes/routes');
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     return res.status(200).json({ "msg": "Olá, mundo!" });
 });
 
-app.use(turmaRouters);
+app.use(routers);
 
 
 app.listen('8081', () => {

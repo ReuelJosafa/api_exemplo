@@ -1,4 +1,4 @@
-const turma = require('../models/Turma');
+const turma = require('../repositories/Turma');
 
 class TurmaController {
     async get(req, res) {
