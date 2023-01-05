@@ -1,4 +1,3 @@
-// import { knex } from "../database/connection";
 const knex = require("../database/connection");
 
 class Turma {
